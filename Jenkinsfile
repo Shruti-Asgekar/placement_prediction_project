@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'YOUR_GITHUB_REPOSITORY_LINK'
+                git 'https://github.com/Shruti-Asgekar/placement_prediction_project.git'
             }
         }
 
