@@ -11,13 +11,13 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                bat 'pip install -r requirements.txt'
+                bat 'DS48ISE\\Scripts\\pip install -r requirements.txt'
             }
         }
 
         stage('Run Training') {
             steps {
-                bat 'python train_model.py'
+                bat 'DS48ISE\\Scripts\\python train_model.py'
             }
         }
 
