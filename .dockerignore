@@ -1,0 +1,5 @@
+DS48ISE/
+venv/
+mlruns/
+__pycache__/
+.git/

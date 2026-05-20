@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Placement Prediction</title>
+</head>
+<body>
+
+<h2>Student Placement Prediction</h2>
+
+<form action="/predict" method="post">
+
+    <label>CGPA:</label>
+    <input type="text" name="cgpa" required><br><br>
+
+    <label>Aptitude Score:</label>
+    <input type="text" name="aptitude_score" required><br><br>
+
+    <label>Communication Skill:</label>
+    <input type="text" name="communication_skill" required><br><br>
+
+    <button type="submit">Predict</button>
+
+</form>
+
+{% if prediction %}
+<h3>Result: {{ prediction }}</h3>
+{% endif %}
+
+</body>
+</html>
